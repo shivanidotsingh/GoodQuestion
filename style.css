@@ -1,10 +1,10 @@
-$border-color: #e0e0e0;
 
-*,*:before,*:after{
+border-color: #e0e0e0;
+
+a:before, a:after{
   box-sizing: border-box;
 }
 
-html,
 body{
   height: 100%;
 }
@@ -54,11 +54,11 @@ body{
 	display: block;
   font-size: 18px;
   
-  &:hover{
+  a:hover{
     cursor: pointer;
   }
 
-	&:before{
+	a:before{
     content: '';
     position: absolute;
     height: 5px;

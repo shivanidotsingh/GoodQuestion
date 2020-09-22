@@ -1,6 +1,7 @@
-
-section{
+body{
 	box-sizing: border-box;
+	
+section{
 	
 	display: flex;
 	flex-direction: row;
@@ -45,4 +46,5 @@ section{
 		padding: 20px;
 	}
 	
+}
 }

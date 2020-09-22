@@ -1,17 +1,8 @@
-$(function() {
-	
-	window.setTimeout(function() {
-		$('section').css('opacity', '1');
-	}, 2000);
+var section = $('li');
 
-	$('div').addClass('default');
-	
-		$('div').on('click', function() {
-	
-	  	var e = $('section > div');
-			if(e.hasClass('expand')){
-				 e.removeClass('expand');
-			 	$(this).addClass('expand');
-			} else { $(this).addClass('expand'); }
-		})
-})
+function toggleAccordion() {
+  section.removeClass('active');
+  $(this).addClass('active');
+}
+
+section.on('click', toggleAccordion);

@@ -1,7 +1,26 @@
 <body>
     <link rel="stylesheet" href="style.css">
-<div id="pentitle" style="display: none;" data-title="Expanding Horizontal Accordion in React"></div>
-<div id="root"></div>
-        <script  src="./script.js"></script>
-
+<ul class="accordion">
+  <li class="accordion-item">
+    <input id="s1" class="hide" type="checkbox">
+    <label for="s1"class="accordion-label">First</label>
+    <ul class="accordion-child">
+      <li>
+        <label>
+          <input type="checkbox"> Question
+        </label>
+      </li>
+      <li>
+        <label>
+          <input type="checkbox"> Sensory Prompt
+        </label>
+      </li>
+   </ul>
+  </li>
+  <li class="accordion-item">
+    <input id="s2" class="hide" type="checkbox" checked>
+    <label for="s2" class="accordion-label">Second</label>
+    <p class="accordion-child">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis ultrices nunc. Suspendisse a magna purus. In hac habitasse platea dictumst. Nullam sed nisl quis sem dignissim luctus. Etiam luctus mauris nulla, et efficitur massa efficitur ac.</p>
+  </li>
+</ul>
 </body>

@@ -10,6 +10,17 @@ const colorCombos = [
   { bg: "#393E41", text: "#E94F37" }
 ];
 
+const buttonPhrases = [
+  "Nah, give me another question",
+  "Hmm, ok hit me with one more",
+  "Nope, not the vibe. Try again",
+  "Got anything else?",
+  "Spin the wheel again",
+  "Give me a better one",
+  "Try me again",
+  "I want a different one"
+];
+
 function generatePrompt() {
   const randomPrompt = prompts[Math.floor(Math.random() * prompts.length)];
   document.getElementById("prompt").innerText = randomPrompt.text;
@@ -17,6 +28,8 @@ function generatePrompt() {
   const color = colorCombos[Math.floor(Math.random() * colorCombos.length)];
   document.body.style.backgroundColor = color.bg;
   document.body.style.color = color.text;
-  document.querySelector("button").style.backgroundColor = color.text;
-  document.querySelector("button").style.color = color.bg;
+
+  const button = document.querySelector("button");
+  button.style.color = color.text;
+  button.innerText = buttonPhrases[Math.floor(Math.random() * buttonPhrases.length)];
 }

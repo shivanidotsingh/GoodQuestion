@@ -42,7 +42,7 @@ const prompts = [
   { text: "What emotion do you understand better than all the others?" },
   { text: "What's a hard truth you've had to learn about yourself?" },
   { text: "What makes you irrationally defensive?" },
-  { text: "Is there anything you long for?" },
+  { text: "How do you cope with regret?" },
   { text: "In what ways do you choose to find joy?" },
   { text: "Has your idea of success changed over time?" },
   { text: "Which voices have you learned to turn down in your life?" },

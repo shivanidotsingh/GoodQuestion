@@ -12,6 +12,7 @@ const colorCombos = [
   { bg: "#9357A9", text: "#000000" },
   { bg: "#FF8FA4", text: "#E5E8DC" },
   { bg: "#C6D7C7", text: "#FF5035" },
+  { bg: "#B2B2B2", text: "#E9FF27" },
   { bg: "#393E41", text: "#E94F37" }
 ];
 

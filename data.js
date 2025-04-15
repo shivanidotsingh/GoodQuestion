@@ -1,6 +1,7 @@
 const prompts = [
   { text: "What's an ordinary place that feels extraordinary to you because of what happened there?" },
   { text: "What's the biggest sacrifice you've ever made?" },
+  { text: "What's an instinct you've learned to trust?" },
   { text: "Who was a peer when you were growing up who you modeled your behavior after, for better or for worse?" },
   { text: "What's an experience from growing up when you realized your parents didn't have all the answers?" },
   { text: "When is the first time you remember feeling proud of yourself?" },

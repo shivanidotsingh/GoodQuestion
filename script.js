@@ -1,12 +1,17 @@
 
 const colorCombos = [
-  { bg: "#1A1A1D", text: "#F8E9A1" },
+  { bg: "#CBA0AA", text: "#FAE397" },
   { bg: "#2E4057", text: "#F6F6F6" },
   { bg: "#355C7D", text: "#F8B195" },
+  { bg: "#F9F7E8", text: "#62BFAD" },
   { bg: "#6C5B7B", text: "#C06C84" },
   { bg: "#355C7D", text: "#F67280" },
-  { bg: "#F8E9A1", text: "#1A1A1D" },
+  { bg: "#F3C9DD", text: "#72AEC5" },
   { bg: "#119DA4", text: "#FFC857" },
+  { bg: "#20AD65", text: "#FEC8BE" },
+  { bg: "#9357A9", text: "#000000" },
+  { bg: "#FF8FA4", text: "#E5E8DC" },
+  { bg: "#C6D7C7", text: "#FF5035" },
   { bg: "#393E41", text: "#E94F37" }
 ];
 

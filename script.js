@@ -29,7 +29,14 @@ const buttonPhrases = [
   "I want a different one"
 ];
 
+let remainingPrompts = [...prompts];
+
 function generatePrompt() {
+    if (remainingPrompts.length === 0) {
+    remainingPrompts = [...prompts];
+  }
+  const index = Math.floor(Math.random() * remainingPrompts.length);
+  
   const randomPrompt = prompts[Math.floor(Math.random() * prompts.length)];
   document.getElementById("prompt").innerText = randomPrompt.text;
 
@@ -40,4 +47,6 @@ function generatePrompt() {
   const button = document.querySelector("button");
   button.style.color = color.text;
   button.innerText = buttonPhrases[Math.floor(Math.random() * buttonPhrases.length)];
+
+  return remainingPrompts.splice(index, 1)[0];
 }

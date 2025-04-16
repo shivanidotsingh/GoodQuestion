@@ -35,9 +35,9 @@ function generatePrompt() {
     if (remainingPrompts.length === 0) {
     remainingPrompts = [...prompts];
   }
-  const index = Math.floor(Math.random() * remainingPrompts.length);
-  
-  const randomPrompt = prompts[Math.floor(Math.random() * prompts.length)];
+  const randomIndex = Math.floor(Math.random() * remainingPrompts.length);  
+  const randomPrompt = remainingPrompts.splice(randomIndex, 1)[0];
+
   document.getElementById("prompt").innerText = randomPrompt.text;
 
   const color = colorCombos[Math.floor(Math.random() * colorCombos.length)];
@@ -48,5 +48,4 @@ function generatePrompt() {
   button.style.color = color.text;
   button.innerText = buttonPhrases[Math.floor(Math.random() * buttonPhrases.length)];
 
-  return remainingPrompts.splice(index, 1)[0];
 }

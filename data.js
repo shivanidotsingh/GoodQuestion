@@ -50,7 +50,6 @@ const prompts = [
   { text: "How do you stay connected to people you've lost?" },
   { text: "Has your idea of what it means to be a good person changed?" },
   { text: "Have you ever had a premonition about something that came true?" },
-  { text: "What's a  you've had to let go of?" },
   { text: "Do you think there's more to reality than we can see or touch?" },
   { text: "If you could design the afterlife, what would it look like?" },
   { text: "Where have you experienced awe recently?" },

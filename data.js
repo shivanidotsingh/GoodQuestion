@@ -1,6 +1,5 @@
 const prompts = [
   { text: "What's an ordinary place that feels extraordinary to you because of what happened there?" },
-  { text: "What's the biggest sacrifice you've ever made?" },
   { text: "What's an instinct you've learned to trust?" },
   { text: "What's an experience from growing up when you realized your parents didn't have all the answers?" },
   { text: "When is the first time you remember feeling proud of yourself?" },
@@ -61,7 +60,8 @@ const prompts = [
   { text: "Was there a bedrock truth in your life that you found out wasn't true?" },
   { text: "How often do you think about death?" },
   { text: "What is a place you consider sacred?" },
-  { text: "How do you think about karma, or the consequences of actions?" },
+  { text: "Is there anything you think you got away with, that you shouldn't have?" },
+  { text: "What's the most generous gesture you've given or received?" },
   { text: "Are you comfortable with being forgotten?" },
   { text: "How has your idea of what it means to live a good life changed?" },
   { text: "Do you think people can really change?" }

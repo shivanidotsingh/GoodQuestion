@@ -18,6 +18,8 @@ const colorCombos = [
   { bg: "#393E41", text: "#E94F37" }
 ];
 
+let remainingQuestions = [...allQuestions];
+
 const buttonPhrases = [
   "Nah, give me another question",
   "Hmm, ok hit me with one more",
@@ -29,10 +31,18 @@ const buttonPhrases = [
   "I want a different one"
 ];
 
-function generatePrompt() {
-  const randomPrompt = prompts[Math.floor(Math.random() * prompts.length)];
-  document.getElementById("prompt").innerText = randomPrompt.text;
+function getRandomQuestion() {
+  if (remainingQuestions.length === 0) {
+    remainingQuestions = [...allQuestions];
+  }
 
+  const index = Math.floor(Math.random() * remainingQuestions.length);
+  return remainingQuestions.splice(index, 1)[0];
+}
+
+function getRandomPrompt() {
+  return prompts[Math.floor(Math.random() * prompts.length)];
+  
   const color = colorCombos[Math.floor(Math.random() * colorCombos.length)];
   document.body.style.backgroundColor = color.bg;
   document.body.style.color = color.text;
@@ -41,3 +51,14 @@ function generatePrompt() {
   button.style.color = color.text;
   button.innerText = buttonPhrases[Math.floor(Math.random() * buttonPhrases.length)];
 }
+
+document.getElementById("nextBtn").addEventListener("click", () => {
+  document.getElementById("question").innerText = getRandomQuestion();
+  document.getElementById("nextBtn").innerText = getRandomPrompt();
+});
+
+window.onload = () => {
+  document.getElementById("question").innerText = getRandomQuestion();
+  document.getElementById("nextBtn").innerText = getRandomPrompt();
+};
+

@@ -60,7 +60,7 @@ const prompts = [
   { text: "How often do you think about death?" },
   { text: "What is a place you consider sacred?" },
   { text: "Is there anything you think you got away with, that you shouldn't have?" },
-  { text: "What's the most generous gesture you've given or received?" },
+  { text: "What's an unexpected act of generosity you've experienced recently?" },
   { text: "Are you comfortable with being forgotten?" },
   { text: "How has your idea of what it means to live a good life changed?" },
   { text: "Do you think people can really change?" }
